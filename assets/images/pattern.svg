@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Background" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 675 1200">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2 {
+        fill: #2e2e2e;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-3 {
+        stroke: #404040;
+        stroke-miterlimit: 10;
+        stroke-width: .95px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="675" height="1200"/>
+    </clipPath>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="2.52" dy="2.52"/>
+      <feGaussianBlur result="blur" stdDeviation="1.26"/>
+      <feFlood flood-color="#000" flood-opacity=".23"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-2" x="-262.5" y="262.5" width="1200" height="675" transform="translate(937.5 262.5) rotate(90)"/>
+  <g class="cls-5">
+    <g class="cls-4">
+      <line class="cls-3" x1="21.6" y1="-154.25" x2="21.6" y2="1396.35"/>
+      <line class="cls-3" x1="56.18" y1="-154.25" x2="56.18" y2="1396.35"/>
+      <line class="cls-3" x1="90.75" y1="-154.25" x2="90.75" y2="1396.35"/>
+      <line class="cls-3" x1="125.33" y1="-154.25" x2="125.33" y2="1396.35"/>
+      <line class="cls-3" x1="159.9" y1="-154.25" x2="159.9" y2="1396.35"/>
+      <line class="cls-3" x1="194.47" y1="-154.25" x2="194.47" y2="1396.35"/>
+      <line class="cls-3" x1="229.05" y1="-154.25" x2="229.05" y2="1396.35"/>
+      <line class="cls-3" x1="263.62" y1="-154.25" x2="263.62" y2="1396.35"/>
+      <line class="cls-3" x1="298.19" y1="-154.25" x2="298.19" y2="1396.35"/>
+      <line class="cls-3" x1="332.77" y1="-154.25" x2="332.77" y2="1396.35"/>
+      <line class="cls-3" x1="367.34" y1="-154.25" x2="367.34" y2="1396.35"/>
+      <line class="cls-3" x1="401.92" y1="-154.25" x2="401.92" y2="1396.35"/>
+      <line class="cls-3" x1="436.49" y1="-154.25" x2="436.49" y2="1396.35"/>
+      <line class="cls-3" x1="471.06" y1="-154.25" x2="471.06" y2="1396.35"/>
+      <line class="cls-3" x1="505.64" y1="-154.25" x2="505.64" y2="1396.35"/>
+      <line class="cls-3" x1="540.21" y1="-154.25" x2="540.21" y2="1396.35"/>
+      <line class="cls-3" x1="574.79" y1="-154.25" x2="574.79" y2="1396.35"/>
+      <line class="cls-3" x1="609.36" y1="-154.25" x2="609.36" y2="1396.35"/>
+      <line class="cls-3" x1="643.93" y1="-154.25" x2="643.93" y2="1396.35"/>
+      <line class="cls-3" x1="816.8" y1="1168.91" x2="-12.97" y2="1168.91"/>
+      <line class="cls-3" x1="816.8" y1="1133.15" x2="-12.97" y2="1133.15"/>
+      <line class="cls-3" x1="816.8" y1="1097.39" x2="-12.97" y2="1097.39"/>
+      <line class="cls-3" x1="816.8" y1="1061.62" x2="-12.97" y2="1061.62"/>
+      <line class="cls-3" x1="816.8" y1="1025.86" x2="-12.97" y2="1025.86"/>
+      <line class="cls-3" x1="816.8" y1="990.1" x2="-12.97" y2="990.1"/>
+      <line class="cls-3" x1="816.8" y1="954.34" x2="-12.97" y2="954.34"/>
+      <line class="cls-3" x1="816.8" y1="918.58" x2="-12.97" y2="918.58"/>
+      <line class="cls-3" x1="816.8" y1="882.82" x2="-12.97" y2="882.82"/>
+      <line class="cls-3" x1="816.8" y1="847.06" x2="-12.97" y2="847.06"/>
+      <line class="cls-3" x1="816.8" y1="811.3" x2="-12.97" y2="811.3"/>
+      <line class="cls-3" x1="816.8" y1="775.54" x2="-12.97" y2="775.54"/>
+      <line class="cls-3" x1="816.8" y1="739.77" x2="-12.97" y2="739.77"/>
+      <line class="cls-3" x1="816.8" y1="704.01" x2="-12.97" y2="704.01"/>
+      <line class="cls-3" x1="816.8" y1="668.25" x2="-12.97" y2="668.25"/>
+      <line class="cls-3" x1="816.8" y1="632.49" x2="-12.97" y2="632.49"/>
+      <line class="cls-3" x1="816.8" y1="596.73" x2="-12.97" y2="596.73"/>
+      <line class="cls-3" x1="816.8" y1="560.97" x2="-12.97" y2="560.97"/>
+      <line class="cls-3" x1="816.8" y1="525.21" x2="-12.97" y2="525.21"/>
+      <line class="cls-3" x1="816.8" y1="489.45" x2="-12.97" y2="489.45"/>
+      <line class="cls-3" x1="816.8" y1="453.69" x2="-12.97" y2="453.69"/>
+      <line class="cls-3" x1="816.8" y1="417.92" x2="-12.97" y2="417.92"/>
+      <line class="cls-3" x1="816.8" y1="382.16" x2="-12.97" y2="382.16"/>
+      <line class="cls-3" x1="816.8" y1="346.4" x2="-12.97" y2="346.4"/>
+      <line class="cls-3" x1="816.8" y1="310.64" x2="-12.97" y2="310.64"/>
+      <line class="cls-3" x1="816.8" y1="274.88" x2="-12.97" y2="274.88"/>
+      <line class="cls-3" x1="816.8" y1="239.12" x2="-12.97" y2="239.12"/>
+      <line class="cls-3" x1="816.8" y1="203.36" x2="-12.97" y2="203.36"/>
+      <line class="cls-3" x1="816.8" y1="167.6" x2="-12.97" y2="167.6"/>
+      <line class="cls-3" x1="816.8" y1="131.83" x2="-12.97" y2="131.83"/>
+      <line class="cls-3" x1="816.8" y1="96.07" x2="-12.97" y2="96.07"/>
+      <line class="cls-3" x1="816.8" y1="60.31" x2="-12.97" y2="60.31"/>
+      <line class="cls-3" x1="816.8" y1="24.55" x2="-12.97" y2="24.55"/>
+    </g>
+  </g>
+</svg>

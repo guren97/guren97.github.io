@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url(GTWalsheimProRegular.woff2) format("woff2"),url(GTWalsheimProRegular.woff) format("woff"),url(GTWalsheimProRegular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+:root{ 
+  scroll-behavior: smooth;
+}
+a {
+  /* font-family: "Reddit Sans", serif; */
+  position: relative;
+  color: inherit; /* Preserves link color */
+  text-decoration: none; /* Remove default underline */
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust as needed */
+  width: 100%;
+  height: 1px; /* Thickness of the underline */
+  background-color:  rgb(226 232 240);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+a:hover::after { 
+  transform: scaleX(1); /* Scales the line from 0 to 1, creating the effect */
+}
+
+a, .name, p{  font-family: "Reddit Sans", serif; }
+ 
+.greeting,.about-me{
+  font-family: 'proxima-nova', sans-serif; 
+}
+
+/* yellow color  
+/* #febc08  
+/* rgba(254,188,8,255) 
+*/
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+  }
+}
