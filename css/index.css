@@ -64,3 +64,13 @@ a, .name, p{  font-family: "Reddit Sans", serif; }
     content-visibility: auto;
   }
 }
+
+.icon img {
+  height: 10vw; /* Set height as a percentage of the viewport width for responsiveness */
+  max-height: 3rem; /* Set a maximum height to prevent excessive scaling */
+  transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+.icon img:hover {
+  transform: scale(1.1); /* Slightly scales up the icon on hover */
+}

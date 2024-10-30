@@ -17,8 +17,15 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+    <!-- GSAP CDN -->
+
+    <title>Gbautista@2024Portfolio</title>
   </head>
-  <body class="tracking-wide scrollable" style="padding: 0px">
+  <body
+    id="smooth-wrapper"
+    class="tracking-wide scrollable"
+    style="padding: 0px"
+  >
     <header class="relative bg-slate-950 w-full p-0" style="padding: 0px">
       <nav
         class="h-12 mx-auto w-full px-6 md:px-12 flex items-center justify-between"
@@ -49,7 +56,7 @@
         >
           <li class="mx-2"><a href="#about">ABOUT</a></li>
           <li class="mx-2"><a href="#resume">RESUME</a></li>
-          <li class="mx-2"><a href="#stack">TECK STACKS</a></li>
+          <li class="mx-2"><a href="#stack">MY STACK</a></li>
           <li class="mx-2"><a href="#contact">CONTACT ME</a></li>
         </ul>
       </nav>
@@ -62,7 +69,7 @@
         <a href="#about" class="p-2 hover:bg-slate-700 duration-200">ABOUT</a>
         <a href="#resume" class="p-2 hover:bg-slate-700 duration-200">RESUME</a>
         <a href="#stack" class="p-2 hover:bg-slate-700 duration-200"
-          >TECK STACKS</a
+          >MY STACK</a
         >
         <a href="#contact" class="p-2 hover:bg-slate-700 duration-200"
           >CONTACT ME</a
@@ -71,6 +78,7 @@
     </header>
 
     <main
+      id="smooth-content"
       class="flex flex-col justify-center items-center bg-slate-950 text-slate-50"
     >
       <!-- ABOUT SECTION-->
@@ -125,20 +133,138 @@
 
       <section
         id="stack"
-        class="relative justify-center p-6 w-full flex md:flex items-center bg-slate-400 text-slate-950"
+        class="relative flex justify-center p-6 w-full bg-slate-400 text-slate-950"
       >
         <div class="container mx-auto px-4">
           <div
-            class="absolute inset-0 bg-[url('assets/images/b_triangle.webp')] bg-cover bg-center opacity-100"
+            class="absolute inset-0 bg-[url('assets/images/pattern.webp')] bg-cover bg-center opacity-100"
           ></div>
           <div
-            class="relative -mt-8 flex flex-col w-full md:w-12/12 p-6 items-center justify-center text-center md:text-left text-slate-950"
+            class="relative flex flex-col w-full bg-white inset-0 p-4 bg-opacity-75 items-center justify-center text-center md:text-left text-slate-950"
           >
-            <h1 class="font-bold" style="font-size: clamp(1rem, 5vw, 1.5rem)">
+            <h1
+              class="font-bold text-lg md:text-xl"
+              style="font-size: clamp(1rem, 5vw, 1.5rem)"
+            >
               Stack
             </h1>
+            <p class="text-sm text-gray-400 italic">
+              ***Continuously learning and evolving to stay at the forefront of
+              web development.
+            </p>
+            <div class="mt-4 md:mt-6">
+              <div class="flex flex-wrap justify-center">
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/HTML5.svg"
+                    alt="HTML5"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/CSS3.svg"
+                    alt="CSS3"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/JavaScript.svg"
+                    alt="JavaScript"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/React.svg"
+                    alt="React"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Tailwind-CSS.svg"
+                    alt="Tailwind CSS"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Bootstrap.svg"
+                    alt="Bootstrap"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
 
-            <div>tailwindcss</div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Node.js.svg"
+                    alt="Node.js"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Laravel.svg"
+                    alt="Laravel"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/MongoDB.svg"
+                    alt="MongoDB"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/MySQL.svg"
+                    alt="MySQL"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Mongoose.js.svg"
+                    alt="Mongoose.js"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Git.svg"
+                    alt="Git"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/GitHub.svg"
+                    alt="GitHub"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Figma.svg"
+                    alt="Figma"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+
+                <div class="icon m-2">
+                  <img
+                    src="assets/icons/Postman.svg"
+                    alt="Postman"
+                    class="w-16 h-16 icon-color"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
