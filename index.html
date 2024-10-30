@@ -8,233 +8,179 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
   </head>
-<body class="tracking-wide scrollable" style="padding: 0px;">  
+  <body class="tracking-wide scrollable" style="padding: 0px;">  
+    <header class="bg-slate-950 flex flex-col w-full">
+      <nav class="h-14 mx-auto w-full px-6 md:px-12 flex items-center justify-between"> 
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center">
+            <span class="font-bold">GB</span>
+          </a>
+        </div>
+        
+        <!-- Mobile menu trigger -->
+        <button id="menu-toggle" class="text-white md:hidden focus:outline-none text-2xl">
+          &#9776;  
+        </button>
   
-  <header class="bg-slate-950 flex flex-col w-full">
-    <nav class="h-14 mx-auto w-full px-6 md:px-12 flex items-center justify-between"> 
-      <!-- Logo -->
-      <div class="flex items-center">
-        <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center">
-          <span class="font-bold">GB</span>
+        <!-- Desktop Navigation -->
+        <ul class="hidden md:flex items-center justify-between text-white text-xs font-bold"> 
+          <li class="mx-2"><a href="#about">ABOUT</a></li>
+          <li class="mx-2"><a href="#resume">RESUME</a></li>
+          <li class="mx-2"><a href="#contact">CONTACT ME</a></li>
+        </ul>
+      </nav> 
+      
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="hidden py-4 z-40 md:hidden flex flex-col bg-slate-950 text-white text-xs font-normal px-6"> 
+        <a href="#about" class="p-2 hover:bg-slate-700 duration-200">ABOUT</a>
+        <a href="#resume" class="p-2 hover:bg-slate-700 duration-200">RESUME</a>
+        <a href="#contact" class="p-2 hover:bg-slate-700 duration-200">CONTACT ME</a>
+      </div>
+    </header>  
+    
+    <main class="flex flex-col justify-center items-center bg-slate-950 text-slate-50">
+      <!-- SECTION 1 -->
+      <section id="about" class="mx-auto flex flex-col md:flex-row md:gap-4 items-center justify-center">  
+        <div class="h-96 w-full bg-gradient-to-tr from-zinc-950 to-slate-400">
+          <img class="object-cover h-full w-full" src="assets/images/pic.webp" alt="Hero Image">
+        </div> 
+        <div class="flex">
+          <h1 class="font-bold mr-4" style="font-size: clamp(1.5rem, 5vw, 5rem);">Gwen</h1>
+          <h1 class="font-bold" style="font-size: clamp(1.5rem, 5vw, 5rem);">Bautista</h1>
+        </div> 
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="resume" class="flex justify-center p-6 w-full items-center bg-slate-50 text-slate-950">  
+        <div class="py-4 bg-gray-50" style="font-size: clamp(12px, 5vw, 16px);"> 
+          <div class="container mx-auto px-4">
+            <h2 class="text-xl font-bold mb-6 text-center">Work Experience</h2>
+            <ol class="relative border-s border-gray-200 dark:border-gray-700">            
+              <li class="mb-6 ms-6">     
+                <div class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-600 rounded-full -start-2 ring-8 ring-slate-50 dark:ring-gray-900 dark:bg-blue-900"></div>   
+                <div class="justify-between p-4 bg-white border border-slate-200 sm:flex dark:bg-gray-700 dark:border-gray-600 flex flex-col">
+                  <h3 class="text-sm md:text-xl font-semibold">Map Data Processor</h3>
+                  <span class="text-gray-500 text-sm">08/2023 – Present</span>
+                  <p class="text-gray-700 text-sm">Philippine Statistics Authority – Tarlac City</p>
+                </div>
+              </li>      
+              <li class="mb-6 ms-6">     
+                <div class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50 dark:ring-gray-900 dark:bg-blue-900"></div>         
+                <div class="justify-between p-4 bg-white border border-slate-200 sm:flex dark:bg-gray-700 dark:border-gray-600 flex flex-col">
+                  <h3 class="text-sm md:text-xl font-semibold">Map Data Processor</h3>
+                  <span class="text-gray-500 text-sm">08/2023 – 12/2023</span>
+                  <p class="text-gray-700 text-sm">Philippine Statistics Authority – Tarlac City</p>
+                </div>
+              </li>
+              <li class="mb-6 ms-6"> 
+                <div class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50 dark:ring-gray-900 dark:bg-blue-900"></div>      
+                <div class="p-4 bg-white border border-slate-200 dark:bg-gray-700 dark:border-gray-600">
+                  <h3 class="text-sm md:text-xl font-semibold">Administrative Aide III - Clerk I</h3>
+                  <span class="text-gray-500 text-sm">08/2019 – 03/2022</span>
+                  <p class="text-gray-700 text-sm">Quality Assurance Office, Tarlac State University – Tarlac City</p>
+                </div>
+              </li>
+              <li class="ms-6"> 
+                <div class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50 dark:ring-gray-900 dark:bg-blue-900"></div>    
+                <div class="justify-between p-4 bg-white border border-slate-200 sm:flex dark:bg-gray-700 dark:border-gray-600 flex flex-col">
+                  <h3 class="text-sm md:text-xl font-semibold">OJT/Intern - Associate Computer Specialist/Technician</h3>
+                  <span class="text-gray-500 text-sm">02/2018 – 05/2018</span>
+                  <p class="text-gray-700 text-sm">College of Computer Studies MIS Office, Tarlac State University – Tarlac City</p>
+                </div>
+              </li>
+            </ol> 
+          </div>    
+        </div>  
+      </section> 
+
+      <div class="flex justify-center w-full items-center bg-slate-200 bg-slate-50 px-6 md:py-4 md:px-4">  
+        <a href="assets/resume/gwenbautista.pdf" target="_blank" class="h-12 p-4 px-6 bg-slate-950 text-slate-50 text-sm font-bold flex items-center justify-center w-full duration-200 hover:bg-slate-700 md:w-96"> 
+          <i class="fa-regular fa-file"></i> <span>&nbsp;</span> Download Resume  
         </a>
       </div>
-      
-      <!-- Mobile menu trigger -->
-      <button id="menu-toggle" class="text-white md:hidden focus:outline-none text-2xl">
-        &#9776;  
-      </button>
-  
-      <!-- Desktop Navigation -->
-      <ul class="hidden md:flex items-center justify-between text-white text-xs font-bold"> 
-        <li class="mx-2"><a href="#about">ABOUT</a></li>
-        <li class="mx-2"><a href="#resume">RESUME</a></li>
-        <li class="mx-2"><a href="#contact">CONTACT ME</a></li>
-      </ul>
-    </nav> 
-    
-    <!-- Mobile Navigation -->
-    <div id="mobile-menu" class="hidden py-4 z-40 md:hidden flex flex-col bg-slate-950 text-white text-xs font-normal px-6"> 
-      <a href="#about" class="p-2 hover:bg-slate-700 duration-200">ABOUT</a>
-      <a href="#resume" class="p-2 hover:bg-slate-700 duration-200">RESUME</a>
-      <a href="#contact" class="p-2 hover:bg-slate-700 duration-200">CONTACT ME</a>
-    </div>
+    </main>
 
-  </header>  
-      <main class="flex flex-col justify-center items-center bg-slate-950 text-slate-50" >
-        <!-- SECTION 1 -->
-        <section id="about" class=" mx-auto flex flex-col md:flex-row md:gap-4 items-center justify-center">  
-            <div class="h-96 w-full bg-gradient-to-tr from-zinc-950 to-slate-400">
-              <img class="object-cover h-full w-full" src="assets/images/pic.webp" alt="Hero Image">
-            </div> 
-            <div class="flex">
-              <h1  class="font-bold mr-4" style="font-size: clamp(1.5rem, 5vw,5rem);">Gwen</h1>
-              <h1  class="font-bold" style="font-size: clamp(1.5rem, 5vw, 5rem);">Bautista</h1>
-            </div> 
-        </section>
-
-        <main class="relative flex flex-col justify-center bg-slate-50 overflow-hidden">
-          <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-6">
-              <div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">
-      
-                  <div class="w-full max-w-3xl mx-auto">
-                  
-                      <div class="relative pl-8 sm:pl-32 py-6 group">
-                          <!-- Purple label -->
-                          <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The origin</div>
-                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
-                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May, 2020</time>
-                              <div class="text-xl font-bold text-slate-900">Acme was founded in Milan, Italy</div>
-                          </div>
-                          <!-- Content -->
-                          <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
-                      </div>
-      
-                      <div class="relative pl-8 sm:pl-32 py-6 group">
-                          <!-- Purple label -->
-                          <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The origin</div>
-                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
-                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May, 2020</time>
-                              <div class="text-xl font-bold text-slate-900">Acme was founded in Milan, Italy</div>
-                          </div>
-                          <!-- Content -->
-                          <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
-                      </div>
-      
-                      <div class="relative pl-8 sm:pl-32 py-6 group">
-                          <!-- Purple label -->
-                          <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The origin</div>
-                          <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
-                          <div class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
-                              <time class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May, 2020</time>
-                              <div class="text-xl font-bold text-slate-900">Acme was founded in Milan, Italy</div>
-                          </div>
-                          <!-- Content -->
-                          <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa. Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
-                      </div>
-                      
-                  </div>
-      
-              </div>
-          </div>
-      </main>
-        <!-- SECTION 2 -->
-        <section id="resume" class="flex justify-center p-6 px-6 w-full items-center bg-slate-50 text-slate-950" >  
-            <div class="py-4 bg-gray-50" style="font-size: clamp(12px, 5vw, 16px);"> 
-                <div class="container mx-auto px-4">
-                    <h2 class="text-xl font-bold mb-6 text-center">Work Experience</h2>
-                    <div class="relative">
-                        <div class="border-l-2 border-gray-200">
-                            <!-- Timeline Item 1 -->
-                            <div class="mb-4 ml-6 relative flex flex-col"> 
-                                <div class="h-2 w-2 rounded-full bg-slate-950 absolute top-2" style="margin-left: -1.8rem;"></div> 
-                                <h3 class="text-sm md:text-xl font-semibold">Map Data Processor</h3>
-                                <span class="text-gray-500 text-sm">(10/2024 – Present)</span>
-                                <p class="text-gray-70 text-sm">Philippine Statistics Authority – Tarlac City</p>
-                            </div>
-            
-                            <!-- Timeline Item 2 -->
-                            <div class="mb-4 ml-6 relative flex flex-col"> 
-                              <div class="h-2 w-2 rounded-full bg-slate-300 absolute top-2" style="margin-left: -1.8rem;"></div> 
-                                <h3 class="text-sm md:text-xl font-semibold">Map Data Processor </h3>
-                                <span class="text-gray-500 text-sm">(08/2023 – 12/2023)</span>
-                                <p class="text-gray-700 text-sm">Philippine Statistics Authority – Tarlac City</p>
-                            </div>
-            
-                            <!-- Timeline Item 3 -->
-                            <div class="mb-4 ml-6 relative flex flex-col"> 
-                              <div class="h-2 w-2 rounded-full bg-slate-300 absolute top-2" style="margin-left: -1.8rem;"></div> 
-                                <h3 class="text-sm md:text-xl font-semibold">Administrative Aide III - Clerk I</h3>
-                                <span class="text-gray-500 text-sm">(08/2019 – 03/2022)</span>
-                                <p class="text-gray-700 text-sm">Quality Assurance Office, Tarlac State University – Tarlac City</p>
-                            </div>
-            
-                            <!-- Timeline Item 4 -->
-                            <div class="ml-6 relative flex flex-col"> 
-                              <div class="h-2 w-2 rounded-full bg-slate-300 absolute top-2" style="margin-left: -1.8rem;"></div> 
-                                <h3 class="text-sm md:text-xl font-semibold">OJT/Intern - Associate Computer Specialist/Technician</h3>
-                                <span class="text-gray-500 text-sm">(02/2018 – 05/2018)</span>
-                                <p class="text-gray-700 text-sm">College of Computer Studies MIS Office, Tarlac State University – Tarlac City</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>    
-              </div>  
-        </section> 
-
-        <div class="flex justify-center w-full items-center bg-slate-200 bg-slate-50 px-6 md:py-4 md:px-4 w-full">  
-          <a  href="assets/resume/gwenbautista.pdf" target="_blank" class="h-12 p-4 px-6 bg-slate-950 text-slate-50 text-sm font-bold flex items-center justify-center items-center w-full duration-200 hover:bg-slate-700 md:w-96"> 
-            <i class="fa-regular fa-file"></i> <span>&nbsp;</span> Download Resume  
-        </a>
+    <!-- Contact Section -->
+    <section id="contact" class="flex flex-col md:flex-row justify-between px-6 bg-slate-50 md:items-center md:justify-center">
+      <!-- Left Column: Work Together Section -->
+      <div class="w-full -mb-10 md:mb-10 md:w-6/12 flex flex-col p-6 items-center justify-center text-center md:text-left">
+        <div class="w-8/12 text-left mt-0 md:text-right">
+          <i class="fa-solid -ml-8 fa-arrow-right rotate-45 md:-rotate-45 md:text-3xl"></i> 
         </div>
-      </main>
-    <!-- Endhero -->
-
-      <section id="contact" class="flex flex-col md:flex-row justify-between px-6 bg-slate-50 md:items-center md:justify-center">
-
-        <!-- Left Column: Work Together Section -->
-        <div class="w-full -mb-10 md:mb-10 md:w-6/12 flex flex-col p-6 items-center justify-center text-center md:text-left">
-          <div class="w-8/12 text-left mt-0 md:text-right">
-            <i class="fa-solid -ml-8 fa-arrow-right rotate-45 md:-rotate-45 md:text-3xl"></i> 
-          </div>
-            <h1 class="font-bold mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem);">Let's work together.</h1> 
-        </div>
+        <h1 class="font-bold mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem);">Let's work together.</h1> 
+      </div>
     
-        <!-- Middle Column: Contact Form -->
-        <div class="w-full md:w-5/12 flex flex-col py-6 px-0 md:py-12">
-          <form action="" class="space-y-4">
-              <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
-                  <label for="name" class="text-left text-sm font-semibold">What is your name?</label>
-                  <input type="text" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your name">
-              </div>
-              <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
-                  <label for="email" class="text-left text-sm font-semibold">What is your email?</label>
-                  <input type="email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your email">
-              </div>
-              <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
-                  <label for="message" class="text-left text-sm font-semibold">Your message</label>
-                  <textarea id="message" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Type your message"></textarea>
-              </div>
-              <div>
-                  <button class="bg-slate-300 hover:bg-slate-400 duration-200 text-gray-800 font-bold py-2 px-4 w-full">
-                      <span class=""><i class="fa-regular fa-paper-plane"></i><span>&nbsp;</span>Send</span>
-                  </button>
-              </div>
-          </form>
-        </div> 
-
+      <!-- Middle Column: Contact Form -->
+      <div class="w-full md:w-5/12 flex flex-col py-6 px-0 md:py-12">
+        <form action="" class="space-y-4">
+          <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
+            <label for="name" class="text-left text-sm font-semibold">What is your name?</label>
+            <input type="text" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your name">
+          </div>
+          <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
+            <label for="email" class="text-left text-sm font-semibold">What is your email?</label>
+            <input type="email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your email">
+          </div>
+          <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
+            <label for="message" class="text-left text-sm font-semibold">Your message</label>
+            <textarea id="message" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Type your message"></textarea>
+          </div>
+          <div>
+            <button class="bg-slate-300 hover:bg-slate-400 duration-200 text-gray-800 font-bold py-2 px-4 w-full">
+              <span><i class="fa-regular fa-paper-plane"></i><span>&nbsp;</span>Send</span>
+            </button>
+          </div>
+        </form>
+      </div> 
     </section>
-    
 
-<!-- footer -->
-<footer class="relative flex flex-col md:flex-row bg-slate-950 text-white"> 
-
-  <!-- Right Column: Contact Info -->
-  <div class="flex flex-col p-6 w-full border-t md:border-t-0 md:border-l border-slate-600">
-      <div class="border-b h-48 mb-4">
+    <!-- Footer -->
+    <footer class="relative flex flex-col md:flex-row bg-slate-950 text-white"> 
+      <!-- Right Column: Contact Info -->
+      <div class="flex flex-col p-6 w-full border-t md:border-t-0 md:border-l border-slate-600" style="font-size: clamp(12px, 5vw, 16px);">
+        <div class="border-b h-48 mb-4">
           <h3 class="text-lg font-semibold mb-6">gwenbautista24@yahoo.com</h3>
           <div class="flex flex-col space-y-2 mb-4">
-              <h4 class="text-xs font-bold mb-2">SOCIALS</h4>
-              <h4 class="text-sm font-bold">
-                <a href="https://github.com/guren97" target="_blank" class="hover:underline-none duration-200">
-                <i class="fa-brands fa-github"></i>
-                <span>&nbsp;</span>GITHUB</a>
-              </h4>
-              <h4 class="text-sm font-semibold">
-                <a href="#"  target="_blank" class="hover:underline-none duration-200">  
-                <i class="fa-brands fa-linkedin"></i>
-                <span>&nbsp;</span>LINKEDIN</a>
-              </h4>
-              <h4 class="text-sm font-semibold">
-                <a href="#"  target="_blank" class="hover:underline-none duration-200">
-                  <i class="fa-brands fa-instagram"></i>
-                  <span>&nbsp;</span>INSTAGRAM</a>
-                </h4>
+            <h4 class="text-xs font-bold mb-2">SOCIALS</h4>
+            <h4 class="text-sm font-bold">
+              <a href="https://github.com/guren97" target="_blank" class="hover:underline-none duration-200">
+                <i class="fa-brands fa-github"></i><span>&nbsp;</span>GITHUB
+              </a>
+            </h4>
+            <h4 class="text-sm font-semibold">
+              <a href="#" target="_blank" class="hover:underline-none duration-200">  
+                <i class="fa-brands fa-linkedin"></i><span>&nbsp;</span>LINKEDIN
+              </a>
+            </h4>
+            <h4 class="text-sm font-semibold">
+              <a href="#" target="_blank" class="hover:underline-none duration-200">
+                <i class="fa-brands fa-instagram"></i><span>&nbsp;</span>INSTAGRAM
+              </a>
+            </h4>
           </div>
-      </div>
-      <div class="flex flex-col md:flex-row md:justify-between mb-0 py-4 gap-4 text-slate-400 text-xs">
+        </div>
+        <div class="flex flex-col md:flex-row md:justify-between mb-0 py-4 gap-4 text-slate-400 text-xs">
           <div class="flex flex-col space-y-1">
-              <span class="text-xs font-semibold">VERSION</span>
-              <h3 class="text-sm">2024 Edition <span>&copy;</span>All rights reserved.</h3>
+            <span class="text-xs font-semibold">VERSION</span>
+            <h3 class="text-sm">2024 Edition <span>&copy;</span> All rights reserved.</h3>
           </div>
           <div class="flex flex-col space-y-1">
-              <span class="text-xs  font-bold">LOCAL TIME</span>
-              <div class="flex items-center gap-2">
-                  <h3>Current time in Manila, Philippines ‎(UTC+8)‎:</h3>
-                  <span class="font-bold -ml-1" id="clock"></span>
-              </div>
+            <span class="text-xs font-bold">LOCAL TIME</span>
+            <div class="flex items-center gap-2">
+              <h3>Current time in Manila, Philippines ‎(UTC+8)‎:</h3>
+              <span class="font-bold -ml-1" id="clock"></span>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-  <div id="scroll-to-top" class="fixed bottom-20 right-6 z-10 flex h-14 w-14 md:h-16 md:w-16 bg-white text-slate-950 items-center justify-center rounded-full shadow-lg hover:bg-gray-200 transition-transform duration-300 transform hover:scale-110 hidden">
-      <i class="fa-solid fa-arrow-up text-xl md:text-2xl"></i>
-  </div> 
-</footer>
-<!-- end footer -->   
+      <div id="scroll-to-top" class="fixed bottom-20 right-6 z-10 flex h-14 w-14 md:h-16 md:w-16 bg-white text-slate-950 items-center justify-center rounded-full shadow-lg hover:bg-gray-200 transition-transform duration-300 transform hover:scale-110 hidden">
+        <i class="fa-solid fa-arrow-up text-xl md:text-2xl"></i>
+      </div> 
+    </footer>
+    <!-- End footer -->   
 
-<script src="js/localTime.js"></script>
-<script src="js/toggleButton.js">
-</script> 
-</body>
+    <script src="js/localTime.js"></script>
+    <script src="js/toggleButton.js"></script> 
+  </body>
 </html>
