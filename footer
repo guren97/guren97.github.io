@@ -1,0 +1,45 @@
+<!-- footer -->
+<footer class="relative flex flex-col md:flex-row bg-slate-950 text-white"> 
+
+  <!-- Right Column: Contact Info -->
+  <div class="flex flex-col p-6 w-full border-t md:border-t-0 md:border-l border-slate-600">
+      <div class="border-b h-48 mb-4">
+          <h3 class="text-lg font-semibold mb-6">gwenbautista24@yahoo.com</h3>
+          <div class="flex flex-col space-y-2 mb-4">
+              <h4 class="text-xs font-bold mb-2">SOCIALS</h4>
+              <h4 class="text-sm font-bold">
+                <a href="https://github.com/guren97" target="_blank" class="hover:underline-none duration-200">
+                <i class="fa-brands fa-github"></i>
+                <span>&nbsp;</span>GITHUB</a>
+              </h4>
+              <h4 class="text-sm font-semibold">
+                <a href="#"  target="_blank" class="hover:underline-none duration-200">  
+                <i class="fa-brands fa-linkedin"></i>
+                <span>&nbsp;</span>LINKEDIN</a>
+              </h4>
+              <h4 class="text-sm font-semibold">
+                <a href="#"  target="_blank" class="hover:underline-none duration-200">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>&nbsp;</span>INSTAGRAM</a>
+                </h4>
+          </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:justify-between mb-0 py-4 gap-4 text-slate-400 text-xs">
+          <div class="flex flex-col space-y-1">
+              <span class="text-xs font-semibold">VERSION</span>
+              <h3 class="text-sm">2024 Edition <span>&copy;</span>All rights reserved.</h3>
+          </div>
+          <div class="flex flex-col space-y-1">
+              <span class="text-xs  font-bold">LOCAL TIME</span>
+              <div class="flex items-center gap-2">
+                  <h3>Current time in Manila, Philippines ‎(UTC+8)‎:</h3>
+                  <span class="font-bold -ml-1" id="clock"></span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="scroll-to-top" class="fixed bottom-20 right-6 z-10 flex h-14 w-14 md:h-16 md:w-16 bg-white text-slate-950 items-center justify-center rounded-full shadow-lg hover:bg-gray-200 transition-transform duration-300 transform hover:scale-110 hidden">
+      <i class="fa-solid fa-arrow-up text-xl md:text-2xl"></i>
+  </div>
+
+</footer>

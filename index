@@ -10,41 +10,16 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
 
 </head>
-<body class="tracking-wide">  
-  <header class="bg-slate-950"> 
-    <nav class="h-14 mx-auto px-12 flex items-center justify-between">
-
-      <!-- Logo -->
-      <div class="w-14 h-14">
-        <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center"><span class="font-bold">GB</span></a>
-      </div>
-      
-      <!-- Mobile menu trigger -->
-      <button id="menu-toggle" class="text-white md:hidden focus:outline-none text-2xl">
-        &#9776;  
-      </button>
-
-      <ul class="hidden  md:flex items-center justify-between text-white text-xs font-bold"> 
-        <li class="mx-2"><a href="#about">ABOUT</a></li>
-        <li class="mx-2"><a href="#resume">RESUME</a></li>
-        <li class="mx-2"><a href="#contact">CONTACT ME</a></li>
-      </ul>
-    </nav> 
-    <!-- Mobile navgivation -->
-    <div id="mobile-menu" class="hidden py-12 z-40 md:hidden flex flex-col bg-slate-950 text-white text-xs font-normal px-12"> 
-      <a href="#about" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">ABOUT</a>
-      <a href="#resume" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">RESUME</a>
-      <a href="#contact" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">CONTACT ME</a>
-    </div>
-  </header>
+<body class="tracking-wide">
+  <div class="lg:content-auto"> 
      <!-- top -->
-     <!-- <header class="p-0 w-full min-[320px]">
-      <nav class=" w-full flex justify-between items-center px-12 h-12 bg-slate-950 relative " >
+     <header class="p-0 w-full min-[320px]">
+      <nav class="container mx-auto flex justify-between items-center px-12 h-12 bg-slate-950 relative " >
           <div class="">
               <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center"><span class="font-bold">GB</span></a>
           </div>
           <button id="menu-toggle" class="text-white md:hidden focus:outline-none text-2xl">
-              &#9776;  
+              &#9776; <!-- Hamburger icon -->
           </button>
           <ul class="hidden z-10 md:flex items-center justify-between text-white text-xs font-bold"> 
               <li class="mx-2"><a href="#about">ABOUT</a></li>
@@ -57,7 +32,7 @@
           <a href="#resume" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">RESUME</a>
           <a href="#contact" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">CONTACT ME</a>
       </div>
-  </header>  -->
+  </header> 
     <!-- endtop --> 
     <!-- Hero -->
       <section id="about" class="flex flex-col justify-center items-center" >
@@ -70,7 +45,7 @@
             </div>
 
             <div class="border border-slate-800 rounded-md h-5/5 w-96 flex items-center justify-center overflow-hidden bg-gradient-to-tr from-zinc-950 to-slate-400">
-              <img class="object-cover h-full w-full outline outline-2 outline-offset-2 rounded-md" src="assets/images/.webp" alt="Hero Image">
+              <img class="object-cover h-full w-full outline outline-2 outline-offset-2 rounded-md" src="assets/images/pic.webp" alt="Hero Image">
           </div> 
   
             <div class="mt-6 text-center">
@@ -209,7 +184,8 @@
   </div>
   <div id="scroll-to-top" class="fixed bottom-20 right-6 z-10 flex h-14 w-14 md:h-16 md:w-16 bg-white text-slate-950 items-center justify-center rounded-full shadow-lg hover:bg-gray-200 transition-transform duration-300 transform hover:scale-110 hidden">
       <i class="fa-solid fa-arrow-up text-xl md:text-2xl"></i>
-  </div> 
+  </div>
+
 </footer>
 <!-- end footer -->   
 
