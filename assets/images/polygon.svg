@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Безымянный_градиент_51);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#_Безымянный_градиент_32-2);
+      }
+
+      .cls-3 {
+        fill: url(#_Безымянный_градиент_32);
+      }
+
+      .cls-4 {
+        fill: url(#_Безымянный_градиент_55-2);
+        opacity: .53;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-6 {
+        fill: url(#_Безымянный_градиент_76);
+      }
+
+      .cls-7 {
+        fill: url(#_Безымянный_градиент_33);
+      }
+
+      .cls-8 {
+        fill: url(#_Безымянный_градиент_178);
+      }
+
+      .cls-9 {
+        fill: url(#_Безымянный_градиент_178-2);
+      }
+
+      .cls-10 {
+        fill: url(#_Безымянный_градиент_180);
+      }
+
+      .cls-20 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-11 {
+        fill: url(#_Безымянный_градиент_55);
+      }
+
+      .cls-12 {
+        fill: url(#_Безымянный_градиент_68);
+      }
+
+      .cls-13 {
+        fill: url(#_Безымянный_градиент_76-2);
+      }
+
+      .cls-14 {
+        fill: url(#_Безымянный_градиент_164);
+      }
+
+      .cls-15 {
+        fill: url(#_Безымянный_градиент_35);
+      }
+
+      .cls-16 {
+        fill: url(#_Безымянный_градиент_183);
+      }
+
+      .cls-17 {
+        fill: url(#_Безымянный_градиент_352);
+      }
+
+      .cls-18 {
+        fill: url(#_Безымянный_градиент_160);
+      }
+
+      .cls-19 {
+        fill: url(#_Безымянный_градиент_51-2);
+      }
+    </style>
+    <linearGradient id="_Безымянный_градиент_352" data-name="Безымянный градиент 352" x1="341.49" y1="-49.39" x2="423.3" y2="681.47" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#120c17"/>
+      <stop offset="1" stop-color="#03030e"/>
+    </linearGradient>
+    <clipPath id="clippath">
+      <rect class="cls-5" width="750" height="500"/>
+    </clipPath>
+    <linearGradient id="_Безымянный_градиент_55" data-name="Безымянный градиент 55" x1="606.7" y1="209.75" x2="514.55" y2="282.06" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a1933"/>
+      <stop offset="1" stop-color="#313e85"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_35" data-name="Безымянный градиент 35" x1="454.03" y1="242.72" x2="624.38" y2="281.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#120c17"/>
+      <stop offset="1" stop-color="#2f3b80"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_33" data-name="Безымянный градиент 33" x1="337.02" y1="136.8" x2="15.19" y2="314.25" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#120c17"/>
+      <stop offset="1" stop-color="#1d2a6e"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_51" data-name="Безымянный градиент 51" x1="580.72" y1="337.22" x2="270.77" y2="83.54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#120c17"/>
+      <stop offset="1" stop-color="#374696"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_32" data-name="Безымянный градиент 32" x1="419.95" y1="247.03" x2="316.67" y2="78.41" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#120c17"/>
+      <stop offset="1" stop-color="#313e85"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_32-2" data-name="Безымянный градиент 32" x1="330.88" y1="186.51" x2="264.67" y2="41.52" xlink:href="#_Безымянный_градиент_32"/>
+    <linearGradient id="_Безымянный_градиент_160" data-name="Безымянный градиент 160" x1="645.57" y1="474.84" x2="382.73" y2="224.94" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d284f"/>
+      <stop offset="1" stop-color="#2e3a7c"/>
+    </linearGradient>
+    <linearGradient id="_Безымянный_градиент_51-2" data-name="Безымянный градиент 51" x1="723.1" y1="333.08" x2="454.38" y2="225.04" xlink:href="#_Безымянный_градиент_51"/>
+    <linearGradient id="_Безымянный_градиент_55-2" data-name="Безымянный градиент 55" x1="216.49" y1="348.1" x2="47.17" y2="480.97" xlink:href="#_Безымянный_градиент_55"/>
+    <radialGradient id="_Безымянный_градиент_178" data-name="Безымянный градиент 178" cx="54.72" cy="166.8" fx="54.72" fy="166.8" r="376.93" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#4e61c7"/>
+      <stop offset=".42" stop-color="#272a4d"/>
+      <stop offset="1" stop-color="#272a4d"/>
+    </radialGradient>
+    <radialGradient id="_Безымянный_градиент_164" data-name="Безымянный градиент 164" cx="413.86" cy="312.1" fx="413.86" fy="312.1" r="254.49" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#404e9c"/>
+      <stop offset="1" stop-color="#272a4d"/>
+    </radialGradient>
+    <radialGradient id="_Безымянный_градиент_68" data-name="Безымянный градиент 68" cx="558.78" cy="310.03" fx="558.78" fy="310.03" r="189.75" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#6679de"/>
+      <stop offset=".67" stop-color="#30335d"/>
+      <stop offset="1" stop-color="#333764"/>
+    </radialGradient>
+    <radialGradient id="_Безымянный_градиент_76" data-name="Безымянный градиент 76" cx="432.32" cy="85.24" fx="432.32" fy="85.24" r="216.87" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#4e61c7"/>
+      <stop offset=".67" stop-color="#272a4d"/>
+      <stop offset="1" stop-color="#272a4d"/>
+    </radialGradient>
+    <radialGradient id="_Безымянный_градиент_76-2" data-name="Безымянный градиент 76" cx="422.09" cy="130.12" fx="422.09" fy="130.12" r="277.9" xlink:href="#_Безымянный_градиент_76"/>
+    <radialGradient id="_Безымянный_градиент_180" data-name="Безымянный градиент 180" cx=".94" cy="-301.5" fx=".94" fy="-301.5" r="258.25" gradientTransform="translate(8.37 440.92) rotate(39.4)" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#2f3a78"/>
+      <stop offset=".42" stop-color="#272a4d"/>
+      <stop offset="1" stop-color="#272a4d"/>
+    </radialGradient>
+    <radialGradient id="_Безымянный_градиент_178-2" data-name="Безымянный градиент 178" cx="177.78" cy="199.37" fx="177.78" fy="199.37" r="195.47" xlink:href="#_Безымянный_градиент_178"/>
+    <radialGradient id="_Безымянный_градиент_183" data-name="Безымянный градиент 183" cx="550.33" cy="212.12" fx="550.33" fy="212.12" r="141.36" gradientUnits="userSpaceOnUse">
+      <stop offset=".06" stop-color="#2f3a78"/>
+      <stop offset="1" stop-color="#272a4d"/>
+    </radialGradient>
+  </defs>
+  <g id="BACKGROUND_2" data-name="BACKGROUND 2">
+    <rect class="cls-17" width="750" height="500"/>
+    <g class="cls-20">
+      <polygon class="cls-11" points="679.91 233.7 500.12 211.99 572.29 275.56 679.91 233.7"/>
+      <polygon class="cls-15" points="500.12 211.99 572.29 275.56 443.82 281.68 500.12 211.99"/>
+      <polygon class="cls-7" points="42.08 314.55 239.64 101.11 374.59 140.4 357.16 215.09 42.08 314.55"/>
+      <polygon class="cls-1" points="425.22 101.11 425.22 318.8 557.97 338.09 425.22 101.11"/>
+      <polygon class="cls-3" points="284.06 179.7 425.22 101.11 425.22 248.05 284.06 179.7"/>
+      <polygon class="cls-2" points="360.57 137.11 239.64 101.11 284.06 179.7 360.57 137.11"/>
+      <polygon class="cls-18" points="633.51 483.76 425.22 318.8 557.97 338.09 633.51 483.76"/>
+      <polygon class="cls-19" points="758.53 160.63 633.51 483.76 557.97 338.09 758.53 160.63"/>
+      <polygon class="cls-4" points="217.72 419.45 254.13 268.65 58.18 400.02 217.72 419.45"/>
+      <polygon class="cls-8" points="189.18 211.99 105.56 179.7 153.53 140.4 189.18 211.99"/>
+      <polygon class="cls-14" points="568.62 325.72 561.06 344.05 425.22 318.8 568.62 325.72"/>
+      <polygon class="cls-12" points="733.69 182.62 561.06 344.05 568.62 325.72 733.69 182.62"/>
+      <polygon class="cls-6" points="284.06 179.7 425.22 110.44 425.22 101.11 284.06 179.7"/>
+      <polygon class="cls-13" points="412.98 116.45 425.22 318.8 425.22 101.11 412.98 116.45"/>
+      <path class="cls-10" d="M254.13,219.6c-.44.54-101.39,20.38-101.39,20.38v57.6l101.39-77.98Z"/>
+      <path class="cls-9" d="M205.06,213.78c.55-.18,44.86-19.13,44.86-19.13l-29.43-3.7-15.43,22.83Z"/>
+      <polygon class="cls-16" points="531.93 205.18 602.96 241.72 563.82 204.5 531.93 205.18"/>
+    </g>
+  </g>
+</svg>

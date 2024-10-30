@@ -1,180 +1,379 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css"> 
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body class="tracking-wide scrollable" style="padding: 0px;">  
-    <header class="relative bg-slate-950 w-full">
-      <nav class="h-14 mx-auto w-full px-6 md:px-12 flex items-center justify-between"> 
+  <body class="tracking-wide scrollable" style="padding: 0px">
+    <header class="relative bg-slate-950 w-full p-0" style="padding: 0px">
+      <nav
+        class="h-12 mx-auto w-full px-6 md:px-12 flex items-center justify-between"
+      >
         <!-- Logo -->
         <div class="flex items-center">
-          <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center">
+          <a
+            href="#"
+            class="logo text-white bg-slate-700 h-12 px-4 flex items-center"
+          >
             <span class="font-bold">GB</span>
           </a>
         </div>
-        
+
         <!-- Mobile menu trigger -->
-        <button id="menu-toggle" class="text-white md:hidden focus:outline-none text-2xl">
-          &#9776;  
-        </button>
-  
+        <div class="h-12 flex items-center">
+          <button
+            id="menu-toggle"
+            class="text-white md:hidden focus:outline-none text-2xl h-12"
+          >
+            &#9776;
+          </button>
+        </div>
+
         <!-- Desktop Navigation -->
-        <ul class="hidden md:flex items-center justify-between text-white text-xs font-bold"> 
+        <ul
+          class="hidden md:flex items-center justify-between text-white text-xs font-bold"
+        >
           <li class="mx-2"><a href="#about">ABOUT</a></li>
           <li class="mx-2"><a href="#resume">RESUME</a></li>
+          <li class="mx-2"><a href="#stack">TECK STACKS</a></li>
           <li class="mx-2"><a href="#contact">CONTACT ME</a></li>
         </ul>
-      </nav> 
-      
+      </nav>
+
       <!-- Mobile Navigation -->
-      <div id="mobile-menu" class="hidden py-4 z-40 md:hidden flex flex-col bg-slate-950 text-white text-xs font-normal px-6"> 
+      <div
+        id="mobile-menu"
+        class="hidden py-4 z-40 md:hidden flex flex-col bg-slate-950 text-white text-xs font-normal px-6"
+      >
         <a href="#about" class="p-2 hover:bg-slate-700 duration-200">ABOUT</a>
         <a href="#resume" class="p-2 hover:bg-slate-700 duration-200">RESUME</a>
-        <a href="#contact" class="p-2 hover:bg-slate-700 duration-200">CONTACT ME</a>
+        <a href="#stack" class="p-2 hover:bg-slate-700 duration-200"
+          >TECK STACKS</a
+        >
+        <a href="#contact" class="p-2 hover:bg-slate-700 duration-200"
+          >CONTACT ME</a
+        >
       </div>
-    </header>  
-    
-    <main class="flex flex-col justify-center items-center bg-slate-950 text-slate-50 bg-gradient-to-tr from-zinc-950 to-slate-700">
+    </header>
+
+    <main
+      class="flex flex-col justify-center items-center bg-slate-950 text-slate-50"
+    >
       <!-- ABOUT SECTION-->
-      <section id="about" class="mx-auto md:p-0 flex flex-col md:flex-row md:flex-row md:gap-4 items-center justify-center p-4">
-        <div class="h-96 md:-mb-6 md:h-96 rounded-md md:w-6/12 bg-gradient-to-tr from-zinc-950 to-slate-600">
-          <img class="object-cover h-full w-full border-2 rounded-md md:w-full" src="assets/images/pic.webp" alt="Hero Image">
-        </div> 
-        <div class="flex flex-col items-center md:items-start text-center md:text-left mt-4 md:mt-0 md:w-full px-4">
-          <div class="text-lg font-semibold text-slate-50">Hey there, I'm</div>
-          <div class="md:mt-4">
-            <h1 class="text-2xl md:text-4xl font-bold text-slate-50 md:mb-16" style="font-size: clamp(1.5rem, 5vw, 5rem);">Gwen Bautista</h1>
-            <p class="md:mt-4 text-base text-slate-50 md:text-lg">I'm a self-taught <span class="font-bold">Web Developer.</span></p>
-          </div> 
-        </div>  
+      <section
+        id="about"
+        class="container relative mx-auto flex flex-col md:flex-row items-center justify-between w-full py-8 md:py-16 gap-6 md:gap-10 px-6 md:px-12"
+      >
+        <!-- Image Section -->
+        <div
+          class="inset-0 bg-[url('assets/images/b_triangle.webp')] bg-cover bg-center opacity-100 border-2 bg-gray-300 border-gray-400 md:w-6/12 lg:flex lg:justify-center lg:w-80 lg:ml-80 h-96 rounded-md overflow-hidden shadow-lg"
+        >
+          <img
+            class="object-cover h-full w-full md:w-80 md:h-96"
+            src="assets/images/pic.webp"
+            alt="Hero Image"
+          />
+        </div>
+
+        <!-- Another Section (Optional) -->
+        <div
+          class="bg-slate-950 rounded-md p-6 text-center md:text-left md:w-6/12 flex flex-col justify-center items-center md:items-start space-y-2 md:space-y-4 relative"
+        >
+          <!-- Intro Text -->
+          <h2 class="text-white text-2xl md:text-3xl">Hey there, I'm</h2>
+          <span
+            class="text-4xl md:text-6xl font-bold"
+            style="font-size: clamp(2rem, 5vw, 3.5rem)"
+          >
+            Gwen Bautista
+          </span>
+          <p
+            class="text-slate-50 text-base md:text-lg leading-relaxed max-w-md"
+          >
+            Crafting ideas into digital experiences as a passionate, self-taught
+            <span class="font-bold">Web Developer</span> from
+            <span class="font-bold">the Philippines</span>.
+          </p>
+
+          <!-- Contact Button -->
+          <div
+            class="w-full mt-6 md:mt-12 flex justify-center md:justify-start"
+          >
+            <a
+              href="#contact"
+              class="mt-6 -mb-6 md:mb-6 p-3 px-6 bg-slate-700 text-white text-sm font-bold shadow-md transition duration-200 hover:bg-slate-800"
+            >
+              Let's Create Something Awesome Together
+            </a>
+          </div>
+        </div>
       </section>
-      
-      <!-- RESUME SECTION -->  
-     <section id="resume" class="flex justify-center p-6 w-full items-center bg-slate-50 text-slate-950">  
-        <div class=" bg-gray-50" > 
+
+      <section
+        id="stack"
+        class="relative justify-center p-6 w-full flex md:flex items-center bg-slate-400 text-slate-950"
+      >
+        <div class="container mx-auto px-4">
+          <div
+            class="absolute inset-0 bg-[url('assets/images/b_triangle.webp')] bg-cover bg-center opacity-100"
+          ></div>
+          <div
+            class="relative -mt-8 flex flex-col w-full md:w-12/12 p-6 items-center justify-center text-center md:text-left text-slate-950"
+          >
+            <h1 class="font-bold" style="font-size: clamp(1rem, 5vw, 1.5rem)">
+              Stack
+            </h1>
+
+            <div>tailwindcss</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESUME SECTION -->
+      <section
+        id="resume"
+        class="flex justify-center p-6 w-full items-center bg-slate-50 text-slate-950"
+      >
+        <div class="bg-gray-50">
           <div class="container mx-auto px-4">
-
-            <div class="relative -mt-6 flex flex-col w-full md:w-12/12 p-6 items-center justify-center text-center md:text-left">
-              
-              <h1 class="font-bold" style="font-size: clamp(1.5rem, 5vw, 2rem);">My work experiences.</h1> 
+            <div
+              class="relative -mt-6 flex flex-col w-full md:w-12/12 p-6 items-center justify-center text-center md:text-left"
+            >
+              <h1 class="font-bold" style="font-size: clamp(1rem, 5vw, 1.5rem)">
+                Work experiences.
+              </h1>
             </div>
-          
-            <ol class="relative border-s border-gray-200 ">            
-              <li class="mb-6 ms-6">     
-                <div class="absolute flex items-center justify-center w-4 h-4 mt-6 bg-slate-600 rounded-full -start-2 ring-8 ring-slate-50  "></div>   
-                <div class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col">
-                  <h3 class="text-sm md:text-xl font-semibold">Map Data Processor</h3>
-                  <span class="text-gray-500 text-sm">10/2024 – Present</span>
-                  <p class="text-gray-700 text-sm">Philippine Statistics Authority – Tarlac City</p>
-                </div>
-              </li>      
-              <li class="mb-6 ms-6">     
-                <div class="absolute flex items-center justify-center w-4 h-4 mt-6 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50  "></div>         
-                <div class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col">
-                  <h3 class="text-sm md:text-xl font-semibold">Map Data Processor</h3>
-                  <span class="text-gray-500 text-sm">08/2023 – 12/2023</span>
-                  <p class="text-gray-700 text-sm">Philippine Statistics Authority – Tarlac City</p>
-                </div>
-              </li>
-              <li class="mb-6 ms-6"> 
-                <div class="absolute flex items-center justify-center w-4 h-4 mt-6 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50  "></div>      
-                <div class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col">
-                  <h3 class="text-sm md:text-xl font-semibold">Administrative Aide III - Clerk I</h3>
-                  <span class="text-gray-500 text-sm">08/2019 – 03/2022</span>
-                  <p class="text-gray-700 text-sm">Quality Assurance Office, Tarlac State University – Tarlac City</p>
-                </div>
-              </li>
-              <li class="ms-6"> 
-                <div class="absolute flex items-center justify-center w-4 h-4 mt-6 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50  "></div>    
-                <div class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col">
-                  <h3 class="text-sm md:text-xl font-semibold">OJT/Intern - Associate Computer Specialist/Technician</h3>
-                  <span class="text-gray-500 text-sm">02/2018 – 05/2018</span>
-                  <p class="text-gray-700 text-sm">College of Computer Studies MIS Office, Tarlac State University – Tarlac City</p>
-                </div>
-              </li>
-            </ol> 
-          </div>    
-        </div>  
-      </section>   
 
-      <div class="-mt-2 py-6 flex justify-center w-full items-center bg-slate-200 bg-slate-50 px-6 md:py-4 md:px-4">  
-        <a href="assets/resume/gwenbautista.pdf" target="_blank" class="h-12 p-4 px-6 bg-slate-950 text-slate-50 text-sm font-bold flex items-center justify-center w-full duration-200 hover:bg-slate-700 md:w-96"> 
-          <i class="fa-regular fa-file"></i> <span>&nbsp;</span> Download Resume  
+            <ol class="relative border-s border-gray-200">
+              <li class="mb-6 ms-6">
+                <div
+                  class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-600 rounded-full -start-2 ring-8 ring-slate-50"
+                ></div>
+                <div
+                  class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col"
+                >
+                  <h3 class="text-left text-sm font-semibold">
+                    Map Data Processor
+                  </h3>
+                  <span class="text-gray-500 text-sm">10/2024 – Present</span>
+                  <p class="text-gray-700 text-sm">
+                    Philippine Statistics Authority – Tarlac City
+                  </p>
+                </div>
+              </li>
+              <li class="mb-6 ms-6">
+                <div
+                  class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50"
+                ></div>
+                <div
+                  class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col"
+                >
+                  <h3 class="text-left text-sm font-semibold">
+                    Map Data Processor
+                  </h3>
+                  <span class="text-gray-500 text-sm">08/2023 – 12/2023</span>
+                  <p class="text-gray-700 text-sm">
+                    Philippine Statistics Authority – Tarlac City
+                  </p>
+                </div>
+              </li>
+              <li class="mb-6 ms-6">
+                <div
+                  class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50"
+                ></div>
+                <div
+                  class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col"
+                >
+                  <h3 class="text-left text-sm font-semibold">
+                    Administrative Aide III - Clerk I
+                  </h3>
+                  <span class="text-gray-500 text-sm">08/2019 – 03/2022</span>
+                  <p class="text-gray-700 text-sm">
+                    Quality Assurance Office, Tarlac State University – Tarlac
+                    City
+                  </p>
+                </div>
+              </li>
+              <li class="ms-6">
+                <div
+                  class="absolute flex items-center justify-center w-4 h-4 mt-5 bg-slate-300 rounded-full -start-2 ring-8 ring-slate-50"
+                ></div>
+                <div
+                  class="justify-between rounded-md p-4 bg-white border border-slate-200 sm:flex flex flex-col"
+                >
+                  <h3 class="text-left text-sm font-semibold">
+                    OJT/Intern - Associate Computer Specialist/Technician
+                  </h3>
+                  <span class="text-gray-500 text-sm">02/2018 – 05/2018</span>
+                  <p class="text-gray-700 text-sm">
+                    College of Computer Studies MIS Office, Tarlac State
+                    University – Tarlac City
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="-mt-2 py-6 flex justify-center w-full items-center bg-slate-200 bg-slate-50 px-6 md:py-4 md:px-4"
+      >
+        <a
+          href="assets/resume/gwenbautista.pdf"
+          target="_blank"
+          class="h-12 p-4 px-6 bg-slate-950 text-slate-50 text-sm font-bold flex items-center justify-center w-full duration-200 hover:bg-slate-700 md:w-96"
+        >
+          <i class="fa-regular fa-file"></i> <span>&nbsp;</span> Download Resume
         </a>
       </div>
+    </main>
 
-    </main> 
-  
     <!-- Contact Section -->
-    <section id="contact" class="relative flex flex-col md:flex-row justify-between px-6 bg-slate-50 md:items-center md:justify-center">
-      <div class="absolute inset-0 bg-[url('assets/images/pattern.webp')] bg-cover bg-center opacity-50"></div>
-      <div class="relative z-10 flex flex-col w-full md:w-6/12 p-6 items-center justify-center text-center md:text-left">
-          <div class="w-8/12 text-left mt-0 md:text-right">
-              <i class="fa-solid -ml-8 fa-arrow-right rotate-45 md:-rotate-45 md:text-3xl"></i> 
-          </div>
-          <h1 class="font-bold mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem);">Let's work together.</h1> 
+    <section
+      id="contact"
+      class="relative flex flex-col md:flex-row justify-between px-6 bg-slate-50 md:items-center md:justify-center"
+    >
+      <div
+        class="absolute inset-0 bg-[url('assets/images/pattern.webp')] bg-cover bg-center opacity-50"
+      ></div>
+      <div
+        class="relative z-10 flex flex-col w-full md:w-6/12 p-6 items-center justify-center text-center md:text-left"
+      >
+        <div class="w-8/12 text-left mt-0 md:text-right">
+          <i
+            class="fa-solid -ml-8 fa-arrow-right rotate-45 md:-rotate-45 md:text-3xl"
+          ></i>
+        </div>
+        <h1 class="font-bold mb-4" style="font-size: clamp(1.5rem, 5vw, 3rem)">
+          Let's work together.
+        </h1>
       </div>
-      
-      <div class="relative z-10 w-full md:w-5/12 flex flex-col py-6 px-4 lg:px-12 md:py-12 bg-white bg-opacity-75 mb-6 -mt-4 md:mb-0 md:-mt-0">
-          <form action="" class="space-y-4">
-              <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
-                  <label for="name" class="text-left text-sm font-semibold">What is your name?</label>
-                  <input type="text" id="name" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your name">
-              </div>
-              <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
-                  <label for="email" class="text-left text-sm font-semibold">What is your email?</label>
-                  <input type="email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your email">
-              </div>
-              <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
-                  <label for="message" class="text-left text-sm font-semibold">Your message</label>
-                  <textarea id="message" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Type your message"></textarea>
-              </div>
-              <div>
-                  <button class="bg-slate-300 hover:bg-slate-400 duration-200 text-gray-800 font-bold py-2 px-4 w-full">
-                      <span><i class="fa-regular fa-paper-plane"></i><span>&nbsp;</span>Send</span>
-                  </button>
-              </div>
-          </form>
-      </div> 
-  </section>
-  
+
+      <div
+        class="relative z-10 w-full md:w-5/12 flex flex-col py-6 px-4 lg:px-12 md:py-12 bg-white bg-opacity-75 mb-6 -mt-4 md:mb-0 md:-mt-0"
+      >
+        <form action="" class="space-y-4">
+          <div
+            class="form-field flex flex-col items-start border-b border-slate-500 py-2"
+          >
+            <label for="name" class="text-left text-sm font-semibold"
+              >What is your name?</label
+            >
+            <input
+              type="text"
+              id="name"
+              class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div
+            class="form-field flex flex-col items-start border-b border-slate-500 py-2"
+          >
+            <label for="email" class="text-left text-sm font-semibold"
+              >What is your email?</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div
+            class="form-field flex flex-col items-start border-b border-slate-500 py-2"
+          >
+            <label for="message" class="text-left text-sm font-semibold"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent"
+              placeholder="Type your message"
+            ></textarea>
+          </div>
+          <div>
+            <button
+              class="bg-slate-300 hover:bg-slate-400 duration-200 text-gray-800 font-bold py-2 px-4 w-full"
+            >
+              <span
+                ><i class="fa-regular fa-paper-plane"></i
+                ><span>&nbsp;</span>Send</span
+              >
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <footer class="relative flex flex-col md:flex-row bg-slate-950 text-white"> 
+    <footer class="flex-col md:flex-row bg-slate-950 text-white">
       <!-- Right Column: Contact Info -->
-      <div class="flex flex-col p-6 w-full border-t md:border-t-0 md:border-l border-slate-600" style="font-size: clamp(12px, 5vw, 16px);">
+      <div
+        class="flex flex-col p-6 w-full"
+        style="font-size: clamp(12px, 5vw, 16px)"
+      >
         <div class="border-b h-48 mb-4">
-          <h3 class="text-lg font-semibold mb-6 flex justify-center md:justify-start">
+          <h3
+            class="text-lg font-semibold mb-6 flex justify-center md:justify-start"
+          >
             gwenbautista24@yahoo.com
           </h3>
-          
+
           <div class="flex flex-col space-y-2 mb-4">
-            <h4 class="text-xs font-bold mb-2">SOCIALS</h4>
+            <h4 class="text-xs font-bold mb-2 text-slate-400">SOCIALS</h4>
             <h4 class="text-sm font-bold">
-              <a href="https://github.com/guren97" target="_blank" class="hover:underline-none duration-200">
+              <a
+                href="https://github.com/guren97"
+                target="_blank"
+                class="hover:underline-none duration-200"
+              >
                 <i class="fa-brands fa-github"></i><span>&nbsp;</span>GITHUB
               </a>
             </h4>
             <h4 class="text-sm font-semibold">
-              <a href="#" target="_blank" class="hover:underline-none duration-200">  
+              <a
+                href="#"
+                target="_blank"
+                class="hover:underline-none duration-200"
+              >
                 <i class="fa-brands fa-linkedin"></i><span>&nbsp;</span>LINKEDIN
               </a>
             </h4>
             <h4 class="text-sm font-semibold">
-              <a href="#" target="_blank" class="hover:underline-none duration-200">
-                <i class="fa-brands fa-instagram"></i><span>&nbsp;</span>INSTAGRAM
+              <a
+                href="#"
+                target="_blank"
+                class="hover:underline-none duration-200"
+              >
+                <i class="fa-brands fa-instagram"></i
+                ><span>&nbsp;</span>INSTAGRAM
               </a>
             </h4>
           </div>
         </div>
-        <div class="flex flex-col md:flex-row md:justify-between mb-0 py-4 gap-4 text-slate-400 text-xs">
+        <div
+          class="flex flex-col md:flex-row md:justify-between mb-0 py-4 gap-4 text-slate-400 text-xs"
+        >
           <div class="flex flex-col space-y-1">
             <span class="text-xs font-semibold">VERSION</span>
-            <h3 class="text-sm">2024 Edition <span>&copy;</span> All rights reserved.</h3>
+            <h3 class="text-xs">
+              2024-v.1.0 <span>&copy;</span>All rights reserved.
+            </h3>
           </div>
           <div class="flex flex-col space-y-1">
             <span class="text-xs font-bold">LOCAL TIME</span>
@@ -185,13 +384,16 @@
           </div>
         </div>
       </div>
-      <div id="scroll-to-top" class="fixed bottom-20 right-6 z-10 flex h-14 w-14 md:h-16 md:w-16 bg-white text-slate-950 items-center justify-center rounded-full shadow sm hover:bg-gray-200 transition-transform duration-300 transform hover:scale-110 hidden">
+      <div
+        id="scroll-to-top"
+        class="fixed bottom-20 right-6 z-10 flex h-14 w-14 md:h-16 md:w-16 bg-white text-slate-950 items-center justify-center rounded-full shadow sm hover:bg-gray-200 transition-transform duration-300 transform hover:scale-110 hidden"
+      >
         <i class="fa-solid fa-arrow-up text-xl md:text-2xl"></i>
-      </div> 
+      </div>
     </footer>
-    <!-- End footer -->   
+    <!-- End footer -->
 
     <script src="js/localTime.js"></script>
-    <script src="js/toggleButton.js"></script> 
+    <script src="js/toggleButton.js"></script>
   </body>
 </html>
