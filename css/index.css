@@ -14,7 +14,7 @@
   scroll-behavior: smooth;
 }
 /* Hide scrollbar for all browsers */
-body {
+body { 
   overflow: hidden; /* Prevent default scrollbar */
   height: 100vh; /* Full viewport height */
 }

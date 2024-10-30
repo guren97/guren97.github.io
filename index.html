@@ -8,10 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
   </head>
-<body class="tracking-wide scrollable">  
+<body class="tracking-wide scrollable border"style="padding: 0px;">  
+  
   <header class="bg-slate-950 flex flex-col w-full">
-    <nav class="h-14 mx-auto w-full px-6 md:px-12 flex items-center justify-between">
-      
+    <nav class="h-14 mx-auto w-full px-6 md:px-12 flex items-center justify-between"> 
       <!-- Logo -->
       <div class="flex items-center">
         <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center">
@@ -38,75 +38,80 @@
       <a href="#resume" class="p-2 hover:bg-slate-700 duration-200">RESUME</a>
       <a href="#contact" class="p-2 hover:bg-slate-700 duration-200">CONTACT ME</a>
     </div>
-  </header>
-  
-     <!-- top --> 
-    <!-- endtop --> 
-    <!-- Hero -->
-      <section id="about" class="flex flex-col justify-center items-center" >
-        <!-- SECTION 1 -->
-        <div class="flex flex-col relative p-6 h-dvh/2 w-full items-center bg-slate-950 text-white bg-slate-50" > 
 
-            <div class="name absolute w-full flex flex-col md:flex-row md:space-x-2 text-center justify-center items-center top-80 mt-4 -ml-24 name -space-y-10 md:space-y-0 px-6"> 
+  </header> 
+
+    <!-- Hero -->
+      <section class="flex flex-col justify-center items-center bg-slate-950 text-slate-50" >
+        <!-- SECTION 1 -->
+        <div id="about" class="flex flex-col md:flex-row md:gap-4 items-center justify-center"> 
+
+            <div class="h-96 w-72 bg-gradient-to-tr from-zinc-950 to-slate-400">
+              <img class="object-cover h-full w-full" src="assets/images/pic.webp" alt="Hero Image">
+            </div>
+
+            <div class="flex">
+              <h1  class="font-bold mr-4" style="font-size: clamp(1.5rem, 5vw,5rem);">Gwen</h1>
+              <h1  class="font-bold" style="font-size: clamp(1.5rem, 5vw, 5rem);">Bautista</h1>
+            </div>
+            <!-- <div class="name absolute w-full flex flex-col md:flex-row md:space-x-2 text-center justify-center items-center top-80 mt-4 -ml-24 name -space-y-10 md:space-y-0 px-6"> 
               <h1  class="font-bold -ml-36" style="font-size: clamp(5rem, 5vw, 3rem);">Gwen</h1>
               <h1  class="font-bold  ml-56" style="font-size: clamp(5rem, 5vw, 3rem);">Bautista</h1>
             </div>
 
             <div class="h-5/5 w-96 flex items-center justify-center overflow-hidden bg-gradient-to-tr from-zinc-950 to-slate-400">
               <img class="object-cover h-full w-full" src="assets/images/pic.webp" alt="Hero Image">
-          </div> 
+           </div> 
   
             <div class="mt-4 text-center">
               <h1 class="mb-3 text-xl font-bold   text-center">About me</h1>
               <p class="text-base md:text-lg about-me" > 
                   I'm a self taught Web Developer
               </p> 
-            </div>  
+            </div>   -->
         </div>
 
-        <div id="resume" class="flex justify-center p-6 px-6 w-full items-center bg-slate-50"> 
+        <div id="resume" class="flex justify-center p-6 px-6 w-full items-center bg-slate-50 text-slate-950" > 
           <!-- experience -->
-            <section id="experience" class="py-4 bg-gray-50" style="font-size: clamp(12px, 5vw, 16px);">
-              
+            <section class="py-4 bg-gray-50" style="font-size: clamp(12px, 5vw, 16px);"> 
                 <div class="container mx-auto px-4">
                     <h2 class="text-xl font-bold mb-6 text-center">Work Experience</h2>
                     <div class="relative">
-                        <div class="border-l-2 border-gray-300">
+                        <div class="border-l-2 border-gray-200">
                             <!-- Timeline Item 1 -->
-                            <div class="mb-6 ml-6 relative"> 
+                            <div class="mb-4 ml-6 relative"> 
+                                <div class="h-2 w-2 rounded-full bg-slate-950 absolute top-2" style="margin-left: -1.8rem;"></div> 
                                 <h3 class="text-sm md:text-xl font-semibold">Map Data Processor <span class="text-gray-500">(10/2024 – Present)</span></h3>
                                 <p class="text-gray-70 text-sm">Philippine Statistics Authority – Tarlac City</p>
                             </div>
             
                             <!-- Timeline Item 2 -->
-                            <div class="mb-6 ml-6 relative"> 
+                            <div class="mb-4 ml-6 relative"> 
+                              <div class="h-2 w-2 rounded-full bg-slate-300 absolute top-2" style="margin-left: -1.8rem;"></div> 
                                 <h3 class="text-sm md:text-xl font-semibold">Map Data Processor <span class="text-gray-500">(08/2023 – 12/2023)</span></h3>
                                 <p class="text-gray-700 text-sm">Philippine Statistics Authority – Tarlac City</p>
                             </div>
             
                             <!-- Timeline Item 3 -->
-                            <div class="mb-6 ml-6 relative"> 
+                            <div class="mb-4 ml-6 relative"> 
+                              <div class="h-2 w-2 rounded-full bg-slate-300 absolute top-2" style="margin-left: -1.8rem;"></div> 
                                 <h3 class="text-sm md:text-xl font-semibold">Administrative Aide III - Clerk I <span class="text-gray-500">(08/2019 – 03/2022)</span></h3>
                                 <p class="text-gray-700 text-sm">Quality Assurance Office, Tarlac State University – Tarlac City</p>
                             </div>
             
                             <!-- Timeline Item 4 -->
                             <div class="ml-6 relative"> 
+                              <div class="h-2 w-2 rounded-full bg-slate-300 absolute top-2" style="margin-left: -1.8rem;"></div> 
                                 <h3 class="text-sm md:text-xl font-semibold">OJT/Intern - Associate Computer Specialist/Technician <span class="text-gray-500">(02/2018 – 05/2018)</span></h3>
                                 <p class="text-gray-700 text-sm">College of Computer Studies MIS Office, Tarlac State University – Tarlac City</p>
                             </div>
-                        </div> 
-                        
+                        </div>  
                     </div>
-                </div>  
-
-                  <!-- education -->
-                  <div class="">
-
-                  </div> 
+                </div>    
             </section> 
         </div> 
-        <div class="flex justify-center px-6 w-full items-center bg-slate-50 mb-2">  
+
+        <div class="flex justify-center px-6 w-full items-center bg-slate-50">  
           <a  href="assets/resume/gwenbautista.pdf" target="_blank" class="h-12 p-4 px-6 bg-slate-950 text-slate-50 text-sm font-bold flex justify-center items-center w-full hover:bg-slate-700 md:w-96"> 
             Download Resume  
         </a>
