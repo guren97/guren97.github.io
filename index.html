@@ -1,21 +1,19 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="css/index.css">
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
-
-</head>
-<body class="tracking-wide">  
-  <header class="bg-slate-950"> 
-    <nav class="h-14 mx-auto px-12 flex items-center justify-between">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+  </head>
+<body class="tracking-wide scrollable">  
+  <header class="bg-slate-950 flex py-2 w-full"> 
+    <nav class="h-14 mx-auto w-full px-12 flex items-center justify-between">
 
       <!-- Logo -->
-      <div class="w-14 h-14">
+      <div class="flex items-center">
         <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center"><span class="font-bold">GB</span></a>
       </div>
       
@@ -37,27 +35,7 @@
       <a href="#contact" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">CONTACT ME</a>
     </div>
   </header>
-     <!-- top -->
-     <!-- <header class="p-0 w-full min-[320px]">
-      <nav class=" w-full flex justify-between items-center px-12 h-12 bg-slate-950 relative " >
-          <div class="">
-              <a href="#" class="logo text-white bg-slate-700 h-12 px-4 flex items-center"><span class="font-bold">GB</span></a>
-          </div>
-          <button id="menu-toggle" class="text-white md:hidden focus:outline-none text-2xl">
-              &#9776;  
-          </button>
-          <ul class="hidden z-10 md:flex items-center justify-between text-white text-xs font-bold"> 
-              <li class="mx-2"><a href="#about">ABOUT</a></li>
-              <li class="mx-2"><a href="#resume">RESUME</a></li>
-              <li class="mx-2"><a href="#contact">CONTACT ME</a></li>
-          </ul>
-      </nav>
-      <div id="mobile-menu" class="hidden py-12 z-40 md:hidden flex flex-col bg-slate-950 text-white text-xs font-normal px-12"> 
-          <a href="#about" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">ABOUT</a>
-          <a href="#resume" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">RESUME</a>
-          <a href="#contact" class="p-2 px-6 hover:bg-slate-700 duration-200 hover:underline-none">CONTACT ME</a>
-      </div>
-  </header>  -->
+     <!-- top --> 
     <!-- endtop --> 
     <!-- Hero -->
       <section id="about" class="flex flex-col justify-center items-center" >
@@ -69,12 +47,12 @@
               <h1  class="font-bold  ml-56" style="font-size: clamp(5rem, 5vw, 3rem);">Bautista</h1>
             </div>
 
-            <div class="border border-slate-800 rounded-md h-5/5 w-96 flex items-center justify-center overflow-hidden bg-gradient-to-tr from-zinc-950 to-slate-400">
-              <img class="object-cover h-full w-full outline outline-2 outline-offset-2 rounded-md" src="assets/images/.webp" alt="Hero Image">
+            <div class="h-5/5 w-96 flex items-center justify-center overflow-hidden bg-gradient-to-tr from-zinc-950 to-slate-400">
+              <img class="object-cover h-full w-full" src="assets/images/pic.webp" alt="Hero Image">
           </div> 
   
-            <div class="mt-6 text-center">
-              <h1 class="mb-3 text-xl font-bold mb-6 text-center">About me</h1>
+            <div class="mt-4 text-center">
+              <h1 class="mb-3 text-xl font-bold   text-center">About me</h1>
               <p class="text-base md:text-lg about-me" > 
                   I'm a self taught Web Developer
               </p> 

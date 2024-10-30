@@ -13,6 +13,24 @@
 :root{ 
   scroll-behavior: smooth;
 }
+/* Hide scrollbar for all browsers */
+body {
+  overflow: hidden; /* Prevent default scrollbar */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Create a scrollable area */
+.scrollable {
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100%; /* Fill the height of the body */
+  padding-right: 15px; /* Prevent content from shifting */
+}
+
+/* Optional: Hide scrollbar for webkit browsers */
+.scrollable::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in webkit browsers */
+}
+
 a {
   /* font-family: "Reddit Sans", serif; */
   position: relative;
