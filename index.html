@@ -17,8 +17,20 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
-    <!-- GSAP CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "xN9ZfPWP_Sl5izlNk",
+        });
+      })();
+    </script>
+
+    <script src="js/sendEmail.js"></script>
     <title>Gbautista@2024Portfolio</title>
   </head>
   <body
@@ -88,7 +100,7 @@
       >
         <!-- Image Section -->
         <div
-          class="inset-0 bg-[url('assets/images/b_triangle.webp')] bg-cover bg-center opacity-100 border-2 bg-gray-300 border-gray-400 md:w-6/12 lg:flex lg:justify-center lg:w-80 lg:ml-80 h-96 rounded-md overflow-hidden shadow-lg"
+          class="inset-0 bg-[url('assets/images/b_triangle.webp')] bg-cover bg-center opacity-100 border-2 bg-gray-300 border-gray-100 md:w-6/12 lg:flex lg:justify-center lg:w-80 lg:ml-80 h-96 rounded-md overflow-hidden shadow-lg"
         >
           <img
             class="object-cover h-full w-full md:w-80 md:h-96"
@@ -393,56 +405,40 @@
       <div
         class="relative z-10 w-full md:w-5/12 flex flex-col py-6 px-4 lg:px-12 md:py-12 bg-white bg-opacity-75 mb-6 -mt-4 md:mb-0 md:-mt-0"
       >
-        <form action="" class="space-y-4">
-          <div
-            class="form-field flex flex-col items-start border-b border-slate-500 py-2"
-          >
-            <label for="name" class="text-left text-sm font-semibold"
-              >What is your name?</label
-            >
-            <input
-              type="text"
-              id="name"
-              class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent"
-              placeholder="Enter your name"
-            />
+      <form id="contact-form" action="" method="post" class="space-y-4" onsubmit="sendEmail(event)">
+          <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
+              <label for="name" class="text-left text-sm font-semibold">What is your name?</label>
+              <input type="text" id="from_name" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your name" required />
           </div>
-          <div
-            class="form-field flex flex-col items-start border-b border-slate-500 py-2"
-          >
-            <label for="email" class="text-left text-sm font-semibold"
-              >What is your email?</label
-            >
-            <input
-              type="email"
-              id="email"
-              class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent"
-              placeholder="Enter your email"
-            />
+          <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
+              <label for="email" class="text-left text-sm font-semibold">What is your email?</label>
+              <input type="email" id="email" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Enter your email" required />
           </div>
-          <div
-            class="form-field flex flex-col items-start border-b border-slate-500 py-2"
-          >
-            <label for="message" class="text-left text-sm font-semibold"
-              >Your message</label
-            >
-            <textarea
-              id="message"
-              class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent"
-              placeholder="Type your message"
-            ></textarea>
+          <div class="form-field flex flex-col items-start border-b border-slate-500 py-2">
+              <label for="message" class="text-left text-sm font-semibold">Your message</label>
+              <textarea id="message" class="appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-2 leading-tight placeholder:text-sm focus:outline-none focus:placeholder-transparent" placeholder="Type your message" required></textarea>
           </div>
-          <div>
-            <button
-              class="bg-slate-300 hover:bg-slate-400 duration-200 text-gray-800 font-bold py-2 px-4 w-full"
-            >
-              <span
-                ><i class="fa-regular fa-paper-plane"></i
-                ><span>&nbsp;</span>Send</span
-              >
-            </button>
+      
+          <div class="relative">
+              <button id="send-button" class="bg-slate-300 hover:bg-slate-400 duration-200 text-gray-800 font-bold py-3 px-4 w-full">
+                  <span class="flex items-center justify-center">
+                      <i class="fa-regular fa-paper-plane"></i>
+                      <span>&nbsp;</span>
+                      Send
+                  </span>
+              </button>
+              <div id="loading-spinner" class="hidden absolute inset-0 flex justify-center items-center">
+                  <svg class="animate-spin h-5 w-5 text-gray-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0116 0h-2a6 6 0 10-12 0H4z"></path>
+                  </svg>
+              </div>
           </div>
-        </form>
+          <div id="success-message" class=" hidden text-green-700 mt-2 text-sm text-center">
+              Message sent successfully!
+          </div>
+      </form>
+    
       </div>
     </section>
 
@@ -457,7 +453,9 @@
           <h3
             class="text-lg font-semibold mb-6 flex justify-center md:justify-start"
           >
-            gwenbautista24@yahoo.com
+            <a href="mailto:gwenbautista24@yahoo.com" class="nderline-none">
+              gwenbautista24@gmail.com
+            </a>
           </h3>
 
           <div class="flex flex-col space-y-2 mb-4">
