@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Gloria+Hallelujah&family=Hachi+Maru+Pop&display=swap');
+    body {
+        font-family: "Crafty Girls", cursive;
+        background-color: #FFF9DB;
+    }
+
+    button {
+        border: 3px solid;
+        width: 60%;
+        height: 64px;
+        border-radius: 24px;  
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+        background-color: #FDE68A;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .modal {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+    }
+
+    .modal img {
+        border-radius: 12px;
+        max-width: 70%;
+        max-height: 70%;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen text-center">
+
+    <div class="flex flex-col justify-center items-center space-y-6">
+        <div class="h-48 w-48">
+            <img class="rounded-full" src="images/bear_1.jpg" alt="Bear">
+        </div>
+        <h1 class="text-5xl font-bold text-amber-700">Dinner on Sunday?</h1>
+
+        <div class="flex flex-col space-y-4 w-full max-w-sm items-center justify-center">
+            <button id="yes_button" onclick="yesDaw()" class="bg-white text-amber-600 font-bold text-2xl">
+                Yes
+            </button>
+            <button id="maybe_button" onclick="maybeDaw()" class="bg-white text-amber-600 font-bold text-2xl">
+                Maybe
+            </button>
+            <button id="no_button" onclick="noDaw()" class="bg-white text-amber-600 font-bold text-2xl">
+                No
+            </button>
+        </div>
+    </div>
+
+    <!-- Modals for Bears -->
+    <div id="happy_bear" class="modal hidden">
+        <img src="./images/bear_happy.jpg" alt="Happy Bear">
+    </div>
+
+    <div id="undecided_bear" class="modal hidden">
+        <img src="./images/undecided.jpg" alt="Undecided Bear">
+    </div>
+
+    <div id="sad_bear" class="modal hidden">
+        <img src="./images/bear_sad.png" alt="Sad Bear">
+    </div>
+
+    <script>
+        // Function to show the bear modals
+        function showBear(bearId) {
+            const bearModal = document.getElementById(bearId);
+            bearModal.classList.remove("hidden");
+
+            // Hide modal after 3 seconds
+            setTimeout(() => {
+                bearModal.classList.add("hidden");
+            }, 3000);
+        }
+
+        function yesDaw() {
+            showBear("happy_bear");
+        }
+
+        function maybeDaw() {
+            showBear("undecided_bear");
+        }
+
+        function noDaw() {
+            showBear("sad_bear");
+        }
+    </script>
+
+</body>
+</html>
